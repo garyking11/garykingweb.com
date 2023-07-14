@@ -1,0 +1,107 @@
+<footer>
+    <div id="footer">
+        <div class="container">
+
+            <!-- Footer Col. -->
+            <div class="col-sm-12 col-md-4 col-lg-4">
+
+
+            </div>
+            <!-- //Footer Col.// -->
+
+
+            <!-- Footer Col. -->
+            <div class="col-sm-12 col-md-4 col-lg-4">
+
+                <div class="footer-content">
+
+                    <span class="ft-schema" itemscope itemtype="http://schema.org/Person"></span>
+                    <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"></span>
+
+                    <ul class="contact-info  list-unstyled">
+                        <li class="social-icons">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="http://www.linkedin.com/in/garybking/"
+                               title="linkedin" target="_blank"
+                               class="social-media-icon linkedin-icon">
+                                &nbsp;linkedin
+                            </a>
+                        </li>
+                        <li>
+                                    <span class="contact-title">
+                                        <i class="icon-phone"></i>phone:
+                                    </span>
+                            <span class="contact-details">
+                                        <span itemprop="telephone">
+                                            206-447-5196
+                                        </span>
+
+                                        <span itemprop="addressLocality">
+                                        Seattle, </span>
+                                        <span itemprop="addressRegion">WA</span>
+                                        </span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <a class="email" rel="gary@garykingweb.com?subject=Web Inquiry"
+                       title="Click here to email me">&nbsp;</a>
+                </div>
+
+                <div class="copyright">
+                    <div class="copyright-text">&copy;&nbsp;Gary B King
+                        <p>
+                            This website created with <i class="fab fa-angular"></i> Angular 7.2.14
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--</div> wrapper end -->
+
+
+<script>
+    $(document).ready(function () {
+
+        /* obfuscate email */
+        var $emailLinks = $('a.email');
+
+        if ($emailLinks.length < 1) {
+            return;
+        } // skip this function if no objects found
+        //alert($('a.email')).attr('href');
+        // Insert empty <a> tag with the following attributes:
+        // * class="email"
+        // * rel="example|domain.com" where pipe char '|' replaces '@'
+        // * title="Email Us", this is the text shown after the email link is created by js
+        $emailLinks.addClass('addicon').emailProt();
+    });
+</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-43688158-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
